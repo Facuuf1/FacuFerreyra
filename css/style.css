@@ -1,0 +1,107 @@
+/* FONT POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+/* STYLES */
+:root{
+    --main-font:"Poppins", sans-serif;
+    --color-span-header: #86ace0;
+}
+
+
+/* GENERAL */
+h3{
+    font-size: 18px;
+}
+h1{
+    font-size: 30px;
+}
+
+
+/* HEADER */
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.container-title{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    & span{
+        background-color: var(--color-span-header);
+        padding: 1px 3px;
+        font-weight: 600;
+        border-radius: 2px;
+        box-shadow: 1px 1px 0 0 gray;
+    }
+}
+
+
+/* TECHNO */
+
+.techno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tech-list{
+    text-align: center;
+    margin-bottom: 3rem;
+
+    & h3{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    & i{
+        font-size: 30px;
+        transition: .4s ease;
+        
+
+    }
+}
+.tech-stack{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tech-item{
+    transition: .4s ease-in;
+
+    & i{ 
+        &:hover{
+            color: rgb(226, 184, 67);
+        }
+    }
+
+}
+.tech-item:hover,
+.tech-learn-item:hover{
+    transform: scale(1.2,1.2);
+    margin: .2rem;
+}
+
+.tech-learn-item{
+    transition: .4s ease-in;
+    & i{
+        
+        &:hover{
+            color: #61DBFB;
+        }
+    }
+}
+
+/* PROJECTS */
