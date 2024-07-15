@@ -17,10 +17,10 @@
 
 /* GENERAL */
 h3{
-    font-size: 18px;
+    font-size: 14px;
 }
 h1{
-    font-size: 30px;
+    font-size: 34px;
 }
 
 
@@ -35,7 +35,7 @@ h1{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
 
     & span{
         background-color: var(--color-span-header);
@@ -53,6 +53,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom:4rem;
 }
 
 .container-tech-list{
@@ -71,11 +72,12 @@ h1{
 
     }
 }
-.tech-stack{
+.tech-stack,
+.tech-learn{
     display: flex;
     justify-content: center;
     margin: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
     width: 100px;
 }
 
@@ -108,3 +110,23 @@ h1{
 }
 
 /* PROJECTS */
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.project-title{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.project-img{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+}
