@@ -1,4 +1,4 @@
-/* FONT POPPINS */
+/* FONT POPPINS -----------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
@@ -8,14 +8,14 @@
     font-family: var(--main-font);
 }
 
-/* STYLES */
+/* STYLES ------------------------------------------------------------------------*/
 :root{
     --main-font:"Poppins", sans-serif;
     --color-span-header: #86ace0;
 }
 
 
-/* GENERAL */
+/* GENERAL ------------------------------------------------------------------------*/
 h3{
     font-size: 14px;
 }
@@ -23,8 +23,62 @@ h1{
     font-size: 34px;
 }
 
+.section-title{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
 
-/* HEADER */
+/* BOTON GENERAL ------------------------------------------------------------------*/
+.btn{
+    position: relative;
+    padding:8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--main-font);
+    box-shadow: 3px 3px 0 0 black;
+    transition: .5s all ;
+    &:hover{
+        cursor: pointer;
+        transform: scale(.9,.9);
+        transform: translate(5px,5px);
+        box-shadow:none;
+    }
+    /* &::before{
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 2px;
+        height: 5px;
+        bottom: -1px;
+        left: 3.7px;
+        transform: rotate(-45deg);
+        z-index:-2;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 2px;
+        height: 5px;
+        top: 1.6px;
+        right: 1px;
+        transform: rotate(-47deg);
+        z-index:-2;
+        
+    } */
+}
+/* .btn:hover::before,
+.btn:hover::after{
+    display: none;
+    
+} */
+
+
+
+
+
+/* HEADER -------------------------------------------------------------------------*/
 .container{
     max-width: 1024px;
     margin: 0 auto;
@@ -47,7 +101,7 @@ h1{
 }
 
 
-/* TECHNO */
+/* TECHNO ------------------------------------------------------------------------*/
 
 .techno{
     display: flex;
@@ -85,11 +139,8 @@ h1{
     transition: .4s ease-in;
 
 
-    & i{ 
-        &:hover{
-            color: rgb(226, 184, 67);
-
-        }
+    & i:hover{
+        color: rgb(226, 184, 67);
     }
 
 }
@@ -101,32 +152,86 @@ h1{
 
 .tech-learn-item{
     transition: .4s ease-in;
-    & i{
-        
-        &:hover{
-            color: #61DBFB;
-        }
+    & i:hover{
+        color: #61DBFB;
     }
 }
 
-/* PROJECTS */
+/* PROJECTS -----------------------------------------------------------------------------*/
 
 .projects{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 5rem;
 
-}
-
-.project-title{
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 600;
 }
 
 .project-img{
     display: grid;
     grid-template-columns: 1fr;
-    gap:20px;
+    gap:50px;
+    margin: 4rem 0;
+}
+
+.img-item{
+    background-color: blue;
+    height: 300px;    
+    & a{
+        & img{
+            padding: 10px;
+            background-color: #61DBFB;
+        }
+    }
+}
+
+/* SOCIAL --------------------------------------------------------------------------------*/
+.social-container{
+    margin-bottom: 5rem;
+}
+.social-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0;
+
+    & a{
+        text-decoration: none;
+        color: black;
+        font-size: 28px;
+        transition: .4s ease-in;
+        
+        & .linkedin{
+            transition:.2s ease-in;
+            &:hover{
+                color: #0e76a8;
+            }
+        }
+        
+    }
+}
+
+.social-items a:hover{
+    transform: scale(1.2,1.2);
+    margin:0 .2rem;
+}
+
+
+
+
+/* ABOUT ME ------------------------------------------------------------------------------*/
+
+
+.about-me-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 3rem;
+
+    
 }
