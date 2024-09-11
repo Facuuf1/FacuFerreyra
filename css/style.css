@@ -16,6 +16,9 @@
 
 
 /* GENERAL ------------------------------------------------------------------------*/
+body{
+    background-color: #fffffa;
+}
 h3{
     font-size: 14px;
 }
@@ -37,6 +40,9 @@ h1{
     border-radius: 8px;
     font-family: var(--main-font);
     box-shadow: 3px 3px 0 0 black;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
     transition: .5s all ;
     &:hover{
         cursor: pointer;
@@ -167,23 +173,105 @@ h1{
     margin-bottom: 5rem;
 
 }
+.container-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.project-preview{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 310px;
+    overflow: hidden;
+    
 
-.project-img{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap:50px;
-    margin: 4rem 0;
+
+}
+.project-preview-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    /* gap: 8rem; */
+    background-color: gray;
+    padding: .5rem 3rem;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 1rem;
+
+
+}
+.project-preview-name{
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.img-item{
-    background-color: blue;
-    height: 300px;    
-    & a{
-        & img{
-            padding: 10px;
-            background-color: #61DBFB;
-        }
+
+
+.project-preview-tech{
+    display: flex;
+    gap:1rem;
+
+    & p{
+        font-size: 12px;
     }
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(175, 168, 168);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    height: 0;
+
+    
+    
+}
+
+.project-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 6rem;
+    gap: 2rem;
+ 
+}
+.project-tech{
+    display: flex;
+    gap: 4rem;
+   
+    
+}
+ 
+.project-description{
+    width: 300px;
+}
+
+.project-preview.active .project{
+    display: flex;
+    height: 100%;
+    
+}
+
+
+.project-preview.active .project-preview-info{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.btn-project{
+    margin-top: 2.3rem;
+    display: none;
 }
 
 /* SOCIAL --------------------------------------------------------------------------------*/
@@ -232,6 +320,22 @@ h1{
     flex-direction: column;
     gap: 40px;
     margin-top: 3rem;
+}
 
-    
+/* CONTACT ME -----------------------------------------------------------------------------*/
+
+.contact-me-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+
+.contact-info{
+    display: flex;
+    gap: 1rem;
+}
+.email{
+    font-size: 14px;
 }
