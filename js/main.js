@@ -1,3 +1,57 @@
+const project = async()=>{
+    try{
+        const res = await fetch("../projects/projects.json");
+        const data = await res.json();
+
+        data.forEach(produ =>{
+
+            let containerProjectProdu = document.createElement("div");
+            containerProjectProdu.classList.add(".container-project-produ");
+
+            containerProjectProdu.innerHTML=
+            `
+            <div class="project-preview ${produ.class}">
+                <div class="project-preview-info ">
+        
+                    <h2 class="project-preview-name">${produ.name}</h2>
+        
+                    <div class="project-preview-tech">
+                        <p>${produ.tech1}</p>
+                    
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <img src="${produ.img}" alt="${produ.name}">
+                    <div class="project-info">
+                                
+                        <div class="project-tech">
+                            <a href="${produ.codi}" target="_blank">cod</a>
+                            <a href="${produ.url}" target="_blank">pag</a>
+                        </div>
+        
+                        <div class="project-description">
+                            <p>${produ.description}</p>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>    
+
+            `
+            document.querySelector(".container-project").appendChild(containerProjectProdu); 
+            
+        })
+        refreshBtn();
+
+    }catch(err){
+        console.error("error");
+    }
+
+
+}
+project();
 function animationDots(){
     const dotContainer = document.querySelector(".dots");
     let text = "...";
@@ -15,25 +69,28 @@ function animationDots(){
 }
 animationDots();
 
-const previewProject = document.querySelectorAll(".project-preview-info");
-const container = document.querySelectorAll(".project-preview");
+let previewProject = document.querySelectorAll(".project-preview-info");
+let container = document.querySelectorAll(".project-preview");
 const btnCopy = document.querySelector(".btn-copy");
 
-previewProject.forEach(button =>{  
-    button.addEventListener("click", (e)=>{      
+function refreshBtn(){
+    let previewProject = document.querySelectorAll(".project-preview-info");
+    previewProject.forEach(button=>{
+        button.addEventListener("click", btnOpenProject)
+    })
+}
+function btnOpenProject(){
+    let container = document.querySelectorAll(".project-preview");
+
         container.forEach(btn=>{
             btn.classList.remove("active");
         })
-    })
-    container.forEach(btn=>{
-        btn.addEventListener("click",(e)=>{
-            e.currentTarget.classList.add("active");
+        container.forEach(btn=>{
+            btn.addEventListener("click",(e)=>{
+                e.currentTarget.classList.add("active");
+            })
         })
-    })
-})
-
-
-
+}
 btnCopy.addEventListener("click",()=>{
     const text = document.querySelector(".email").innerHTML;
     

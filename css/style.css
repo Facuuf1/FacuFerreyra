@@ -173,7 +173,7 @@ h1{
     margin-bottom: 5rem;
 
 }
-.container-project{
+.container-project-produ{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,6 +215,7 @@ h1{
 .project-preview-tech{
     display: flex;
     gap:1rem;
+    
 
     & p{
         font-size: 12px;
@@ -246,7 +247,7 @@ h1{
 .project-tech{
     display: flex;
     gap: 4rem;
-   
+    
     
 }
  
