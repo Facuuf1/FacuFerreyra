@@ -4,16 +4,16 @@
         "img":"../assets/img/images.png",
         "codi":"",
         "url":"",
-        "description":"asdasdadsaasdasdasdasdasdadasdasdasd asdadsdaasdadasdasdasdssdasda",
-        "tech1":"JS"
+        "description":"hola me llamo facundo como estas este es un texto de prueba despues va a ser borrado",
+        "tech1":"<i class='ri-javascript-fill'></i>"
     },
     {
         "name":"Carrito",
         "img":"../assets/img/images.png",
         "codi":"",
         "url":"",
-        "description":"asdasdadsaasdasdasdasdasdadasdasdasd asdadsdaasdadasdasdasdssdasda",
-        "tech1":"JS"
+        "description":"asd asda dsaas dasdasdas das dadasd sdasd asdad sdaasd adasda dasds sdas da",
+        "tech1":"<i class='ri-javascript-fill'></i>"
     }
 
 

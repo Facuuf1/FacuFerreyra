@@ -16,8 +16,8 @@ const project = async()=>{
                     <h2 class="project-preview-name">${produ.name}</h2>
         
                     <div class="project-preview-tech">
-                        <p>${produ.tech1}</p>
-                    
+                        <a href="${produ.codi}" target="_blank"><i class="ri-github-fill"></i></a>
+                        <a href="${produ.url}" target="_blank"><i class="ri-external-link-line"></i></a>
                     </div>
                 </div>
     
@@ -26,8 +26,11 @@ const project = async()=>{
                     <div class="project-info">
                                 
                         <div class="project-tech">
-                            <a href="${produ.codi}" target="_blank">cod</a>
-                            <a href="${produ.url}" target="_blank">pag</a>
+                            <p>${produ.tech1}</p>
+                            <p>${produ.tech1}</p>
+                            <p>${produ.tech1}</p>
+                            <p>${produ.tech1}</p>
+                            <p>${produ.tech1}</p>
                         </div>
         
                         <div class="project-description">
