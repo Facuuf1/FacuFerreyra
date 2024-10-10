@@ -1,6 +1,6 @@
 const project = async()=>{
     try{
-        const res = await fetch("../projects/projects.json");
+        const res = await fetch("./projects/projects.json");
         const data = await res.json();
 
         data.forEach(produ =>{
