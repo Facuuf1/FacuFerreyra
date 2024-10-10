@@ -233,9 +233,6 @@ a{
         align-items:center;
         border-radius: 6px;
         color: black;
-        &:hover{
-            
-        }
     }
 
 }
@@ -270,10 +267,7 @@ a{
     
 }
  
-.project-description{
-    
-    
-}
+
 
 .project-preview.active .project{
     display: flex;
