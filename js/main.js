@@ -6,7 +6,7 @@ const project = async()=>{
         data.forEach(produ =>{
 
             let containerProjectProdu = document.createElement("div");
-            containerProjectProdu.classList.add(".container-project-produ");
+            containerProjectProdu.classList.add("container-project-produ");
 
             containerProjectProdu.innerHTML=
             `
@@ -26,11 +26,7 @@ const project = async()=>{
                     <div class="project-info">
                                 
                         <div class="project-tech">
-                            <p>${produ.tech1}</p>
-                            <p>${produ.tech1}</p>
-                            <p>${produ.tech1}</p>
-                            <p>${produ.tech1}</p>
-                            <p>${produ.tech1}</p>
+                  
                         </div>
         
                         <div class="project-description">
@@ -49,7 +45,7 @@ const project = async()=>{
         refreshBtn();
 
     }catch(err){
-        console.error("error");
+        console.error("error",err);
     }
 
 
