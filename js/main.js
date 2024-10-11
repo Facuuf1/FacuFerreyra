@@ -26,7 +26,11 @@ const project = async()=>{
                     <div class="project-info">
                                 
                         <div class="project-tech">
-                  
+                            <p>${produ.tech1}</p>
+                            <p>${produ.tech1}</p>
+                            <p>${produ.tech1}</p>
+                            <p>${produ.tech1}</p>
+                        
                         </div>
         
                         <div class="project-description">
