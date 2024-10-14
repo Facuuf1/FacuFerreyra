@@ -14,6 +14,13 @@
     --main-font:"Poppins", sans-serif;
     --color-secondary: #344c64;
     --title-font:"Karla", sans-serif;
+    --hover-linkedin:rgb(226, 184, 67);
+    --hover-react:#61DBFB ;
+    --color-details:#748aa8;
+    --color-light-details:#c0dbff;
+    --color-background-project:#f5f5f0;
+    --color-white:#fff;
+    --color-black: black;
 
 }
 
@@ -106,7 +113,7 @@ a{
     & span{
         background-color: var(--color-secondary);
         padding: 1px 3px;
-        color: #748aa8;
+        color: var(--color-details);
         font-weight: 600;
         border-radius: 2px;
         box-shadow: 2px 2px 5px 0 gray;
@@ -154,7 +161,7 @@ a{
 
 
     & i:hover{
-        color: rgb(226, 184, 67);
+        color: var(--hover-linkedin);
     }
 
 }
@@ -167,7 +174,7 @@ a{
 .tech-learn-item{
     transition: .4s ease-in;
     & i:hover{
-        color: #61DBFB;
+        color: var(--hover-react);
     }
 }
 
@@ -223,7 +230,7 @@ a{
     font-family: var(--title-font);
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: var(--color-white);
 }
 
 
@@ -235,18 +242,18 @@ a{
 
     & a{
         opacity: 0.5;
-        background-color: #748aa8;
+        background-color: var(--color-details);
         padding-inline: 5px;
         justify-content: center;
         align-items:center;
         border-radius: 6px;
-        color: black;
+        color: var(--color-black);
         transition: .7s all;
         
         &:hover{
             transform: scale(1.1,1.1) translateY(-3px);
             opacity: 1;
-            background-color: #c0dbff;
+            background-color: var(--color-light-details);
             box-shadow: 0 1px 10px .3px rgb(182, 181, 181);
         }
     }
@@ -256,7 +263,7 @@ a{
 .project{
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f0;
+    background-color: var(--color-background-project);
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     height: 0;
@@ -352,14 +359,14 @@ a{
 
     & a{
         text-decoration: none;
-        color: black;
+        color: var(--color-black);
         font-size: 28px;
         transition: .4s ease-in;
         
         & .linkedin{
             transition:.2s ease-in;
             &:hover{
-                color: #0e76a8;
+                color: var(--hover-linkedin);
             }
         }
         

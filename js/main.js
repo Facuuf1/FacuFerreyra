@@ -59,7 +59,7 @@ project();
 
 function changeColor(){
     const spanTitle = document.querySelector(".span-title");    
-    let time = Math.floor(Math.random() * 2000);
+    let time = Math.floor(Math.random() * 1000);
     setInterval(()=>{
         spanTitle.style.color="#fff";
     },time);
