@@ -55,6 +55,23 @@ const project = async()=>{
 
 }
 project();
+
+
+function changeColor(){
+    const spanTitle = document.querySelector(".span-title");    
+    let time = Math.floor(Math.random() * 2000);
+    setInterval(()=>{
+        spanTitle.style.color="#fff";
+    },time);
+    setInterval(()=>{
+        spanTitle.style.color="#748aa8";  
+    },1000);
+
+}
+
+changeColor();
+
+
 function animationDots(){
     const dotContainer = document.querySelector(".dots");
     let text = "...";
