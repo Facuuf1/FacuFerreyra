@@ -392,6 +392,9 @@ a{
     flex-direction: column;
     gap: 1rem;
     margin-top: 3rem;
+    background: #fffffa;
+    box-shadow:  50px -50px 100px #fafaf5,
+                 -50px 50px 100px #ffffff;
 }
 .about-me-profile{
     display: flex;
@@ -400,7 +403,6 @@ a{
     width: 100%;
     padding: 2rem;
     gap: 1.5rem;
-    
 
 }
 .about-me-img{
@@ -421,11 +423,18 @@ a{
     }
 }
 .about-me-data{
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    /* text-align: left; */
-    gap: 1rem;
+    /* display: flex;
+    flex-wrap: wrap; */
+    gap:.3rem;
+    column-count: 2;
+    & p{
+        width: fit-content;
+        background-color: var(--color-details);
+        color: var(--color-light-details);
+        padding: 2px 5px;
+        border-radius: 12px;
+    }
+
 }
 .about-me-description{
     padding: 1rem;
