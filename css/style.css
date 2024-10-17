@@ -445,7 +445,6 @@ a{
             cursor: pointer;
             background-color: var(--color-details);
             color: var(--color-background-project);
-            transform: rotate(-15deg);
         }
     }
 
@@ -475,6 +474,7 @@ a{
     padding-inline: 1rem;
     border-radius: 10px;
     align-items: center;
+    color: var(--color-black);
     gap: 1rem;
     background-color: var(--color-background-project);
     border-radius: 10px;
@@ -487,6 +487,7 @@ a{
 }
 .btn-copy{
     padding: .3rem;
+    color: var(--color-black);
     cursor: pointer;
     background: none;
     border: none;
