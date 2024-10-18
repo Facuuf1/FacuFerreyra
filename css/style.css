@@ -13,6 +13,7 @@
 
 /* STYLES ------------------------------------------------------------------------*/
 :root{
+    --color-main:#fffffa;
     --main-font:"Poppins", sans-serif;
     --title-font:"Karla", sans-serif;
     --description-font:"Inconsolata", monospace;
@@ -30,7 +31,7 @@
 
 /* GENERAL ------------------------------------------------------------------------*/
 body{
-    background-color: #fffffa;
+    background-color: var(--color-main);
 }
 h3{
     font-size: 14px;
@@ -66,38 +67,8 @@ a{
         transform: translate(5px,5px);
         box-shadow:none;
     }
-    /* &::before{
-        content: "";
-        position: absolute;
-        background-color: black;
-        width: 2px;
-        height: 5px;
-        bottom: -1px;
-        left: 3.7px;
-        transform: rotate(-45deg);
-        z-index:-2;
-    }
-    &::after{
-        content: "";
-        position: absolute;
-        background-color: black;
-        width: 2px;
-        height: 5px;
-        top: 1.6px;
-        right: 1px;
-        transform: rotate(-47deg);
-        z-index:-2;
-        
-    } */
+
 }
-/* .btn:hover::before,
-.btn:hover::after{
-    display: none;
-    
-} */
-
-
-
 
 
 /* HEADER -------------------------------------------------------------------------*/
@@ -200,10 +171,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
-    
-    
+    padding-inline: 2rem;
 }
 .project-preview{
     display: flex;
@@ -272,6 +240,7 @@ a{
     height: 0;
     animation: close .4s ease-in;
 
+
 }
 
 
@@ -295,7 +264,6 @@ a{
  
 .project-preview.active{
     transform: scale(1,1);
-    /* border: #86694C solid 1px; */
     
     transition: all 1s;
     box-shadow: 5px 5px 20px 1px rgb(223, 223, 223),
@@ -349,41 +317,6 @@ a{
     display: none;
 }
 
-/* SOCIAL --------------------------------------------------------------------------------*/
-.social-container{
-    margin-bottom: 5rem;
-}
-.social-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 2rem 0;
-
-    & a{
-        text-decoration: none;
-        color: var(--color-black);
-        font-size: 28px;
-        transition: .4s ease-in;
-        
-        & .linkedin{
-            transition:.2s ease-in;
-            &:hover{
-                color: var(--hover-linkedin);
-            }
-        }
-        
-    }
-}
-
-.social-items a:hover{
-    transform: scale(1.2,1.2);
-    margin:0 .2rem;
-}
-
-
-
-
 /* ABOUT ME ------------------------------------------------------------------------------*/
 
 
@@ -394,7 +327,7 @@ a{
     text-align: center;
     flex-direction: column;
     margin-top: 3rem;
-    background: #fffffa;
+    background: var(--color-main);
     box-shadow:  50px -50px 100px #fafaf5,
                  -50px 50px 100px #ffffff;
 }
@@ -411,6 +344,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
     & img{
         border-radius: 8px;
         width: 150px;
@@ -418,12 +352,18 @@ a{
     }
     & .personal-info{
         display: flex;
-        /* gap: 1rem; */
         justify-content: space-around;
+        background-color:var(--color-background-project);
+        padding: .5rem;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        position: absolute;
+        bottom: -24px;
+        width: 100%;
         & p{
             display: flex;
             gap: .2rem;
-            font-size: 12px;
+            font-size: 10px;
             color: var(--color-details);
         }
     }
@@ -431,7 +371,7 @@ a{
 .about-me-data{
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: .3rem;
 
     & a{
         width: fit-content;
@@ -495,4 +435,18 @@ a{
      &:hover{
         transform: scale(1.1,1.1);
      }
+}
+
+
+/* MEDIA SCREEN 480PX -----------------------------------------------------------------------*/
+
+@media screen and (min-width: 480px){
+ 
+    .about-me-data{        
+        gap:1rem;
+    }
+    .project-preview{
+        width: 100%;
+    }
+
 }
