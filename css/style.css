@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--main-font);
+    scroll-behavior: smooth;
 }
 
 /* STYLES ------------------------------------------------------------------------*/
@@ -38,6 +39,8 @@ h3{
 }
 h1{
     font-size: 34px;
+    margin-top: 2px;
+    margin-bottom: 3px;
 }
 
 .section-title{
@@ -82,7 +85,10 @@ a{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin-bottom: 8rem;
+    & div{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
 
     & span{
         background-color: var(--color-secondary);
@@ -94,6 +100,29 @@ a{
       
     }
 }
+.btn-scroll-project{
+    padding: .4rem .9rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    background-color: var(--color-background-project);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--color-background-project);
+    box-shadow:  -5px 5px 10px #d8d8d3,
+                 5px -5px 10px #ffffff;
+    
+
+    font-size: 18px;
+    color: var(--color-secondary);
+
+    
+
+
+      
+}
 
 
 /* TECHNO ------------------------------------------------------------------------*/
@@ -102,7 +131,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:4rem;
 }
 
 .container-tech-list{
@@ -126,7 +154,7 @@ a{
     display: flex;
     justify-content: center;
     margin: 1rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     width: 100px;
 }
 
@@ -171,7 +199,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
 }
 .project-preview{
     display: flex;
@@ -266,8 +294,8 @@ a{
     transform: scale(1,1);
     
     transition: all 1s;
-    box-shadow: 5px 5px 20px 1px rgb(223, 223, 223),
-    -5px -5px 20px 1px rgb(223, 223, 223);
+    box-shadow:  -5px 5px 10px #d8d8d3,
+                 5px -5px 10px #ffffff;
 
 }
 @keyframes close {
@@ -449,4 +477,92 @@ a{
         width: 100%;
     }
 
+}
+
+@media screen and (min-width:768px) {
+
+    .techno{
+        margin-bottom: 4rem;
+    }
+    .container-project-produ{
+        padding-inline: 3rem;
+    }
+    .about-me-info{
+        align-items: start;
+        flex-direction: row;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .about-me-profile{
+        flex-direction: column;
+        padding: 0;
+        gap: 3rem;
+        
+    }
+    .about-me-img{
+        & img{
+            width: 200px;
+        }
+        & .personal-info{
+            & p{
+                font-size: 14px;
+            }
+        }
+    }
+    .about-me-description{
+        padding: 0;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        & p{
+            font-size: 22px;        
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    h1{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .container-title{
+        margin-top: 8rem;
+        & h1{
+            transition: all .6s ease;
+            &:hover{
+                letter-spacing: 3px;
+                transform: scale(1.2,1.2);
+            }
+        }
+    }
+    .tech-stack,.tech-learn{
+        margin-bottom: 4rem;
+    }
+
+    .project img{
+        height: 350px;
+        object-fit: cover;
+    }
+    
+    .project-preview-name{
+        font-size: 24px;
+    }
+    
+    
+    
+    
+    
+    .about-me-img{
+        & img{
+            width: 250px;
+        }
+    }
+    .about-me-description{
+     
+        & p{
+            font-size: 26px;        
+        }
+    }
 }
