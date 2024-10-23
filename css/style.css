@@ -389,6 +389,7 @@ a{
         bottom: -24px;
         width: 100%;
         & p{
+            font-family: var(--description-font);
             display: flex;
             gap: .2rem;
             font-size: 10px;
@@ -476,6 +477,11 @@ a{
     .project-preview{
         width: 100%;
     }
+    .project-tech{
+        font-size: 2rem;
+        
+    }
+   
 
 }
 
@@ -486,6 +492,9 @@ a{
     }
     .container-project-produ{
         padding-inline: 3rem;
+    }
+    .project-description{
+        max-width: 450px;
     }
     .about-me-info{
         align-items: start;
@@ -552,17 +561,29 @@ a{
     
     
     
-    
+    .about-me-info{
+        margin-inline: 4rem;
+
+    }
     
     .about-me-img{
         & img{
-            width: 250px;
+            width: 220px;
         }
     }
     .about-me-description{
      
         & p{
-            font-size: 26px;        
+            font-size: 24px;        
+        }
+    }
+
+    .about-me-data{
+        & a{
+
+            &:hover{
+                transform: rotate(-5deg);
+            }
         }
     }
 }
